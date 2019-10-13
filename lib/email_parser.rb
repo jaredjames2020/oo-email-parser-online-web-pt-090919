@@ -8,11 +8,17 @@ class EmailAddressParser
   
   attr_accessor :parse
   
-  @email_address = []
+  @all = []
 
   def intialize(email_address)
-    binding.pry
-    @email_address = email_address.split(",", " ")
+    @email_address = email_address
+    @@all << self
+  end
+  
+  def parse
+    @all.each do |email|
+      email.split(",", " ")
+  
   end
   
 end
