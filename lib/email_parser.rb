@@ -6,7 +6,7 @@ require 'pry'
 
 class EmailAddressParser
   
-  @all = []
+  @@all = []
 
   def initialize(email_address)
     @email_address = email_address
