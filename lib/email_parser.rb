@@ -6,8 +6,6 @@ require 'pry'
 
 class EmailAddressParser
   
-  attr_accessor :parse
-  
   @all = []
 
   def intialize(email_address)
@@ -18,7 +16,6 @@ class EmailAddressParser
   def parse
     @all.each do |email|
       email.split(",", " ")
-  
   end
   
 end
