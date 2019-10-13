@@ -15,7 +15,7 @@ class EmailAddressParser
   
   def parse
     @@all.each do |email|
-      email.split(",", " ")
+      email.split(", ")
     end
   end
 end
