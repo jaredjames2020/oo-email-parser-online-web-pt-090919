@@ -16,6 +16,6 @@ class EmailAddressParser
   def parse
     @all.each do |email|
       email.split(",", " ")
+    end
   end
-  
 end
